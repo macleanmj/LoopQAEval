@@ -1,4 +1,5 @@
-from playwright.sync_api import Playwright, expect
+import json
+from playwright.sync_api import Playwright, expect, sync_playwright
 
 
 class TestBase:
@@ -10,7 +11,6 @@ class TestBase:
         self.column = column
         self.target_text = target_text
         self.tags = tags
-
 
     # Function to enter the Username and Password that the test was created with
     def login(self):
@@ -62,3 +62,15 @@ class TestBase:
 
         self.browser.close()
 
+
+if __name__ == "__main__":
+    with open('TestCases.json') as f:
+        cases = json.load(f)["TestCases"]
+
+    for case in cases:
+        print(f"*** Running {case['name']} ***")
+        test = TestBase(case["url"], case["username"], case["password"], case["tab"], case["column"],
+                        case["target_text"], case["tags"])
+        with sync_playwright() as playwright:
+            test.run(playwright)
+        print(f"*** Finished {case['name']} ***")

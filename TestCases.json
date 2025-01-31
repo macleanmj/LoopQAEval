@@ -1,0 +1,64 @@
+{
+  "TestCases": [
+    {
+      "name": "Test Case 1",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Web Application",
+      "column": "To Do",
+      "target_text": "Implement user authentication",
+      "tags": ["Feature", "High Priority"]
+    },
+    {
+      "name": "Test Case 2",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Web Application",
+      "column": "To Do",
+      "target_text": "Fix navigation bug",
+      "tags": ["Bug"]
+    },
+    {
+      "name": "Test Case 3",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Web Application",
+      "column": "In Progress",
+      "target_text": "Design system updates",
+      "tags": ["Design"]
+    },
+    {
+      "name": "Test Case 4",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Mobile Application",
+      "column": "To Do",
+      "target_text": "Push notification system",
+      "tags": ["Feature"]
+    },
+    {
+      "name": "Test Case 5",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Mobile Application",
+      "column": "In Progress",
+      "target_text": "Offline mode",
+      "tags": ["Feature", "High Priority"]
+    },
+    {
+      "name": "Test Case 6",
+      "url": "https://animated-gingersnap-8cf7f2.netlify.app/",
+      "username": "admin",
+      "password": "password123",
+      "tab": "Mobile Application",
+      "column": "Done",
+      "target_text": "App icon design",
+      "tags": ["Design"]
+    }
+  ]
+}
